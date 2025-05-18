@@ -4,6 +4,7 @@ import LinkedIn from "@/public/LinkedIn.svg";
 import github from "@/public/github.svg";
 import githubprofile from "@/public/githubprofile.png";
 import { FileUser } from "lucide-react";
+import Circles from "./Circles";
 
 const Header = () => {
   return (
@@ -20,6 +21,7 @@ const Header = () => {
       </div>
 
       <Image src={githubprofile} alt="Dax Davis" />
+      <Circles className="absolute right-[105px] top-[50px]  h-[200px] -z-50" />
     </div>
   );
 };
