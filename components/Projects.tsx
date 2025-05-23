@@ -19,13 +19,32 @@ const projects: Project[] = [
       "Coin Gecko API",
     ],
   },
+  {
+    id: 2,
+    image: {
+      path: "/cryptoapp.png",
+      width: 350,
+      height: 250,
+    },
+    title: "Crypto App",
+    skills: [
+      "Next.js",
+      "Typescript",
+      "Tailwind",
+      "Redux",
+      "ShadCn",
+      "Coin Gecko API",
+    ],
+  },
 ];
 
 const Projects = () => {
   return (
-    <div className="mt-[80px] mx-[16px]">
-      <h2 className="font-bold text-[2.5rem]">Projects</h2>
-      <div className="mt-[40px] flex flex-col gap-10">
+    <div className="mt-[80px] ">
+      <h2 className="font-bold text-[2.5rem] md:text-7xlh lg:text-[88px]">
+        Projects
+      </h2>
+      <div className="mt-[40px] flex flex-col gap-10 md:gap-5 md:flex-row">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
@@ -38,22 +57,43 @@ export default Projects;
 
 const ProjectItem = ({ project }: { project: Project }) => {
   return (
-    <div className="flex flex-col gap-5">
-      <Image
-        src={project.image.path}
-        width={project.image.width}
-        height={project.image.height}
-        alt={`${project.title}'s image`}
-      />
+    <div className="flex flex-col gap-5 md:gap-2  md:w-[55%] relative ">
+      <div className="relative group w-full flex">
+        <Image
+          className="w-full"
+          src={project.image.path}
+          width={project.image.width}
+          height={project.image.height}
+          alt={`${project.title}'s image`}
+        />
+        <div className="underline  decoration-[#4EE1A0] flex items-center justify-center gap-[30px] absolute z-10 font-bold  inset-0 lg:flex-col self-center  opacity-0 group-hover:opacity-100 transition-opacity ">
+          <button>
+            <span className="   hover:text-[#4EE1A0] hover:cursor-pointer text-[#fffff]">
+              View Project
+            </span>
+          </button>
+          <button>
+            <span className="  hover:text-[#4EE1A0]  hover:cursor-pointer">
+              View Code
+            </span>
+          </button>
+        </div>
+        <div className="absolute inset-0 bg-[#171616] opacity-0 group-hover:opacity-50 transition-opacity flex justify-center"></div>
+      </div>
       <div className="flex flex-col gap-[7px]">
-        <h3 className="">{project.title}</h3>
+        <h3 className="md:text-2xl md:font-bold">{project.title}</h3>
         <div>
           {project.skills.map((skill) => (
-            <span key={skill}>{skill}, </span>
+            <span
+              className="md:text-base md:font-medium text-[#D9D9D9]"
+              key={skill}
+            >
+              {skill}{" "}
+            </span>
           ))}
         </div>
       </div>
-      <div className="flex gap-[30px]">
+      <div className="flex gap-[30px]    top-[40%] lg:hidden ">
         <button>
           <span className="underline decoration-[#4EE1A0]">View Project</span>
         </button>
