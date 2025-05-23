@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import LinkedIn from "@/public/LinkedIn.svg";
-import github from "@/public/github.svg";
+
 import githubprofile from "@/public/githubprofile.png";
-import { FileUser } from "lucide-react";
+
 import Circles from "./Circles";
+import Icons from "./Icons";
 
 const Header = () => {
   return (
@@ -13,11 +13,7 @@ const Header = () => {
         <p className="text-center max-w-[129px] mx-auto font-bold text-2xl">
           Dax Davis
         </p>
-        <div className="flex justify-evenly ">
-          <Image src={LinkedIn} alt="linkedin icon" />
-          <Image src={github} alt="Github icon" />
-          <FileUser />
-        </div>
+        <Icons />
       </div>
 
       <Image src={githubprofile} alt="Dax Davis" />
