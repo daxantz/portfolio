@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} antialiased relative max-w-[1110px] md:max-w-[768px] mx-auto`}
+        className={`${spaceGrotesk.className} antialiased relative lg:max-w-[1110px] md:max-w-[768px] mx-auto`}
       >
         <main>{children}</main>
       </body>
