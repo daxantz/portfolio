@@ -1,0 +1,32 @@
+import Image from "next/image";
+import React from "react";
+import LinkedIn from "@/public/LinkedIn.svg";
+import github from "@/public/github.svg";
+import { FileUser } from "lucide-react";
+
+const Icons = () => {
+  return (
+    <div className="flex justify-evenly ">
+      <a
+        href={"https://www.linkedin.com/in/dax-davis-a81b6429a"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <Image src={LinkedIn} alt="linkedin icon" />
+      </a>
+      <a
+        href="https://github.com/daxantz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <Image src={github} alt="Github icon" />
+      </a>
+
+      <FileUser />
+    </div>
+  );
+};
+
+export default Icons;
