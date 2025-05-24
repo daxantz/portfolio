@@ -3,6 +3,8 @@ export type Project = {
   image: image;
   title: string;
   skills: string[];
+  githubLink: string;
+  liveUrl: string;
 };
 
 type image = {
