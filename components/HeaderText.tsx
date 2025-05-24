@@ -12,7 +12,7 @@ const HeaderText = () => {
         developer passionate about building accessible web <br /> apps that
         users love.{" "}
       </p>
-      <p className="font-bold underline decoration-[#4EE1A0] text-center md:text-left text-base">
+      <p className="font-bold underline decoration-[#4EE1A0] text-center md:text-left text-base hover:text-[#4EE1A0] hover:cursor-pointer">
         CONTACT ME
       </p>
     </div>
