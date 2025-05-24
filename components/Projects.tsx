@@ -6,8 +6,8 @@ const projects: Project[] = [
     id: 1,
     image: {
       path: "/cryptoapp.png",
-      width: 350,
-      height: 250,
+      width: 1600,
+      height: 1600,
     },
     title: "Crypto App",
     skills: [
@@ -18,23 +18,20 @@ const projects: Project[] = [
       "ShadCn",
       "Coin Gecko API",
     ],
+    githubLink: "https://github.com/daxantz/crypto-app",
+    liveUrl: "",
   },
   {
     id: 2,
     image: {
-      path: "/cryptoapp.png",
-      width: 350,
-      height: 250,
+      path: "/portfolio.png",
+      width: 1600,
+      height: 1600,
     },
-    title: "Crypto App",
-    skills: [
-      "Next.js",
-      "Typescript",
-      "Tailwind",
-      "Redux",
-      "ShadCn",
-      "Coin Gecko API",
-    ],
+    title: "Developer Portfolio",
+    skills: ["Next.js", "Tailwind", "Vercel", "React", "Figma"],
+    githubLink: "https://github.com/daxantz/portfolio",
+    liveUrl: "",
   },
 ];
 
@@ -74,7 +71,14 @@ const ProjectItem = ({ project }: { project: Project }) => {
           </button>
           <button>
             <span className="  hover:text-[#4EE1A0]  hover:cursor-pointer">
-              View Code
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                View Code
+              </a>
             </span>
           </button>
         </div>
@@ -88,7 +92,8 @@ const ProjectItem = ({ project }: { project: Project }) => {
               className="md:text-base md:font-medium text-[#D9D9D9]"
               key={skill}
             >
-              {skill}{" "}
+              {skill}
+              {", "}
             </span>
           ))}
         </div>
