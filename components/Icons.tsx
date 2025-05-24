@@ -23,8 +23,10 @@ const Icons = () => {
         {" "}
         <Image src={github} alt="Github icon" />
       </a>
-
-      <FileUser />
+      <a href="/resume.pdf" download>
+        {" "}
+        <FileUser />
+      </a>
     </div>
   );
 };
