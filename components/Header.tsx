@@ -3,7 +3,6 @@ import React from "react";
 
 import githubprofile from "@/public/githubprofile.png";
 
-import Circles from "./Circles";
 import Icons from "./Icons";
 
 const Header = () => {
@@ -17,7 +16,6 @@ const Header = () => {
       </div>
 
       <Image src={githubprofile} alt="Dax Davis" />
-      <Circles className="absolute right-[105px] top-[50px]  h-[200px] -z-50" />
     </div>
   );
 };

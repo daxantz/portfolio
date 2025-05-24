@@ -1,5 +1,4 @@
 import React from "react";
-import Circles from "./Circles";
 
 const Skills = () => {
   return (
@@ -30,7 +29,6 @@ const Skills = () => {
           <p>4 Years experience</p>
         </div>
       </div>
-      <Circles className="absolute left-[170px] top-[570px] transform rotate-180" />
     </div>
   );
 };
