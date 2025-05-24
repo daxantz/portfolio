@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderText = () => {
   return (
-    <div className="mt-5 mx-[16px] md:m-0 md:w-[60%] flex flex-col gap-6 ">
+    <div className="mt-5  md:m-0 md:w-[60%] lg:w-[70%] flex flex-col gap-6 ">
       <h1 className="text-center md:text-left font-bold text-[2.5rem] md:text-[4.5rem] text-balance">
         Nice to meet you! I&apos;m{" "}
         <span className="underline decoration-[#4EE1A0]">Dax Davis</span>.
