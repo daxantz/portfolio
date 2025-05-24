@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeaderText from "@/components/HeaderText";
 import LargerHeader from "@/components/LargerHeader";
@@ -15,7 +14,6 @@ export default function Home() {
       <LargerHeader />
       <Skills />
       <Projects />
-      <Footer />
     </>
   );
 }
