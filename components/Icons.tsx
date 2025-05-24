@@ -6,7 +6,7 @@ import { FileUser } from "lucide-react";
 
 const Icons = () => {
   return (
-    <div className="flex justify-evenly gap-4 items-center border-blue-500 md:gap-8 ">
+    <div className="flex justify-evenly gap-4 items-center border-blue-500 md:gap-8 lg:gap-10 ">
       <a
         href={"https://www.linkedin.com/in/dax-davis-a81b6429a"}
         target="_blank"
