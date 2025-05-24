@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Coin Gecko API",
     ],
     githubLink: "https://github.com/daxantz/crypto-app",
-    liveUrl: "",
+    liveUrl: "https://crypto-app-omega-vert.vercel.app/",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "Developer Portfolio",
     skills: ["Next.js", "Tailwind", "Vercel", "React", "Figma"],
     githubLink: "https://github.com/daxantz/portfolio",
-    liveUrl: "",
+    liveUrl: "https://portfolio-mu-sooty-55.vercel.app/",
   },
 ];
 
@@ -66,7 +66,10 @@ const ProjectItem = ({ project }: { project: Project }) => {
         <div className="underline  decoration-[#4EE1A0] flex items-center justify-center gap-[30px] absolute z-10 font-bold  inset-0 lg:flex-col self-center  opacity-0 group-hover:opacity-100 transition-opacity ">
           <button>
             <span className="   hover:text-[#4EE1A0] hover:cursor-pointer text-[#fffff]">
-              View Project
+              <a href={project.liveUrl} rel="noopener noreferrer">
+                {" "}
+                View Project
+              </a>
             </span>
           </button>
           <button>
